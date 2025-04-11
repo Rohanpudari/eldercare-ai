@@ -1,8 +1,9 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from backend.health_monitor import check_health
-from backend.reminder_assistant import get_reminders
-from backend.social_companion import chat_with_elder
+from backend.agents.health_monitor import check_health
+from backend.agents.reminder_assistant import get_reminders
+from backend.agents.social_companion import chat_with_elder
+
 import pandas as pd
 
 app = FastAPI()
